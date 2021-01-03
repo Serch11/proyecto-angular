@@ -8,6 +8,8 @@ import { ContactComponent } from './component/contact/contact.component';
 import { CreateComponent } from './component/create/create.component';
 import { ProjectComponent } from './component/project/project.component';
 import {ErrorComponent} from './component/error/error.component';
+import {DetailComponent} from './component/detail/detail.component';
+import {EditComponent} from './component/edit/edit.component';
  
 //array de rutas
 const appRouter = [
@@ -16,9 +18,10 @@ const appRouter = [
     {path:"contacto",component:ContactComponent},
     {path:"creaproyecto",component:CreateComponent},
     {path:"proyectos",component:ProjectComponent},
+    {path:"detalle-proyecto/:id",component:DetailComponent},
+    {path:"updateProyect/:id",component:EditComponent},
     {path:"**",component:ErrorComponent}
 ];
-
 export const appRoutingProviders:any[] = [];
 export const routing = RouterModule.forRoot(appRouter);
 

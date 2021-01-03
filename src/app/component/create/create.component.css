@@ -1,0 +1,58 @@
+.box-form {
+  width: 100%;
+  padding: 20px;
+}
+#form_project {
+  width: 50%;
+  display: block;
+  padding: 10px;
+}
+.box-form h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0px auto;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+
+#form_project div {
+  padding: 5px;
+}
+#form_project label,
+input[type="text"],
+input[type="submit"],
+input[type="date"] {
+  display: inline-block;
+  width: 100%;
+}
+#form_project input[type="text"],
+input[type="date"] {
+  box-shadow: 0px 0px 2px black;
+  border-radius: 10px;
+}
+#form_project input[type="submit"] {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+#form_project input[type="submit"]:hover {
+  background-color: #23237a8c;
+  color: white;
+}
+
+.box-true {
+  color: white;
+  background-color: rgb(17, 204, 17);
+  font-size: 20px;
+  transition: all 3ms;
+}
+
+.box-error {
+  color: white;
+  background-color: rgb(238, 22, 22);
+  font-size: 20px;
+  transition: all 3ms;
+}

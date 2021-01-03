@@ -30,9 +30,15 @@
             ],
             "styles": [
               "./node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/bxslider/dist/jquery.bxslider.min.css",
+              "./node_modules/bxslider/dist/jquery.bxslider.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/bxslider/dist/jquery.bxslider.min.js",
+              "./node_modules/bxslider/dist/jquery.bxslider.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -97,7 +103,8 @@
               "./node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+            ]
           }
         },
         "lint": {

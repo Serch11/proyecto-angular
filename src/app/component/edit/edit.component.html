@@ -1,0 +1,26 @@
+<div class="container" *ngIf="project">
+    <h1>Editar Proyecto</h1>
+
+    <div style="float: right;" >
+        <img src="{{url +'get-image/'+project.imagen}}" alt="No imagen" class="imagen" *ngIf="project.imagen">
+        <a id="rproyectos" [routerLink]="['/proyectos']">Ver Proyectos</a>
+    </div>
+    <form #editProyect=ngForm id="editProyect">
+        <label for="name">Nombre Del Proyecto</label>
+        <input type="text" name="name" value="{{project.name}}" required #name="ngModel" [(ngModel)]="project.name">
+        <label for="description">Descripcion del Proyecto</label>
+        <input type="text" name="description" value="{{project.description}}" required #description="ngModel"
+            [(ngModel)]="project.description">
+        <label for="category">Categoria del Proyecto</label>
+        <input type="text" name="category" value="{{project.category}}" required #category="ngModel"
+            [(ngModel)]="project.category">
+        <label for="langs">Lenguages</label>
+        <input type="text" name="langs" value="{{project.langs}}" required #langs="ngModel" [(ngModel)]="project.langs">
+        <label for="years">Fecha de creacion</label>
+        <input type="date" name="years" value="{{project.year}}" required #years="ngModel" [(ngModel)]="project.year">
+        <label for="image" style="text-align: justify; color: red;">Seleccione una imagen si desea cambiar</label>
+        <input type="file" name="image" (change)="onChangeFile($event)">
+        <input type="submit" name="editar" value="Guardar Cambios" id="btn-actualizar"
+            (click)="updateProyect(project._id,editProyect)">
+    </form>
+</div>

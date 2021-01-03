@@ -1,1 +1,13 @@
-<p>project works!</p>
+<div class="box">
+    <ul class="projects">
+        <li *ngFor="let project of projects">
+            <a [routerLink]="['/detalle-proyecto',project._id]">
+                <div class="image">
+                    <img src="{{url+'get-image/'+project.imagen}}" alt="No tiene imagen" *ngIf="project.imagen">
+                </div>
+                <h3>{{project.name}}</h3>
+                <p>{{project.description}}</p>
+            </a>
+        </li>
+    </ul>
+</div>

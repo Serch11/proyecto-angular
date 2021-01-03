@@ -1,0 +1,54 @@
+.imagen{
+    width: 40%;
+    float: left;
+}
+
+.imagen img{
+    width: 100%; 
+}
+
+.data{
+    float: left;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.data h1 ,  h3 , p {
+    padding: 0  !important;
+    margin: 0 !important;
+}
+.data p{
+    color: grey;
+}
+.data button , a{
+    float: left;
+    margin-top: 15px;
+    width: 150px;
+    padding-left: 15px;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0px 0px 5px grey;
+    background-color: #0f87ff;
+    border: none;
+    text-align: center;
+    align-items: center;
+}
+
+.btn-eliminar{
+    margin-left: 15px;
+}
+p .btn-eliminar:hover{
+    background-color: #ff3535;
+}
+p .btn-editar:hover{
+    color: black;
+    background-color: #ff9a35 !important;
+}
+.confirmar{
+    color: black;
+    display: block;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+ 

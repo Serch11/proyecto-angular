@@ -1,1 +1,18 @@
-<p>contact works!</p>
+<div class="container">
+    <h1>Pagina de Contacto</h1>
+    <div id="divNombre" #textos>
+        <p [appResaltado] id="nombre" #nombre> Hola sergio</p>
+    </div>
+
+    Tamaño Slider<input type="number" [(ngModel)]="widthSlider"><br>
+    <span>Tamaño Slider {{widthSlider}}</span>
+    <button (click)="cargar()">Cargar tamaño</button>
+    <button (click)="resetear()">resetear tamaño</button>
+
+    <div *ngIf="widthToSlider">
+        <slider [anchura]="widthToSlider" [prueba]="prueba" (pruebaOutput)="getOutput($event)"></slider>
+    </div>
+
+    <span *ngIf="autor">{{autor}}</span><br>
+    <span *ngIf="correo">{{correo}}</span>
+</div>

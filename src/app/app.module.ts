@@ -14,7 +14,12 @@ import { ProjectComponent } from './component/project/project.component';
 import { CreateComponent } from './component/create/create.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { ErrorComponent } from './component/error/error.component';
-import {routing,appRoutingProviders} from './app.routing'
+import {routing,appRoutingProviders} from './app.routing';
+import { DetailComponent } from './component/detail/detail.component';
+import { EditComponent } from './component/edit/edit.component'
+import * as $ from 'jquery';
+import { SliderComponent } from './component/slider/slider.component';
+import { ResaltadoDirective } from './resaltado.directive';
 
 
 registerLocaleData(es);
@@ -26,7 +31,11 @@ registerLocaleData(es);
     ProjectComponent,
     CreateComponent,
     ContactComponent,
-    ErrorComponent
+    ErrorComponent,
+    DetailComponent,
+    EditComponent,
+    SliderComponent,
+    ResaltadoDirective
   ],
   imports: [
     BrowserModule,
